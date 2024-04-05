@@ -1,0 +1,482 @@
+/* Начальные стили */
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans";
+	letter-spacing: 2px;
+}
+/* p, h1, h2, h3, h4, h5, h6 , ul, li, a, img {
+	margin: 0;
+	padding: 0;
+} */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	background-color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#wrapper {
+	width: 100%;
+}
+/* Делаю стили для шапки */
+#header {
+	display: flex;	
+}
+#header img[src$="1.png"]  {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 960px;
+	z-index: -1;
+}
+#header img[src$="logo.png"] {
+	width: 55px;
+	height: 55px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+#header nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 800px;
+	margin-top: 40px;
+	margin-left: 200px
+}
+#header nav a {
+	font-size: 12px;
+	font-family: "Open Sans";
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	height: 20px;
+}
+#header select {
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0);
+	margin-top: 23px;
+	color:white;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-left: 50px;
+	margin-right: 50px;	
+	font-weight: 600;
+}
+#header select option {
+	width: 60px;
+	background-color: #000;
+	opacity: 70%;
+}
+#header hr {
+	position: relative;
+	right: 100px;
+	height: 30px;
+	margin-top: 35px;
+	opacity: 0.6;
+}
+#header img[src$="icon.png"] {
+	position: relative;
+	top: 35px;
+	right: 130px;
+	width: 30px;
+	height: 30px;
+	margin: 0px 15px 0px 0px;
+}
+/* Стили для основного контента */
+#main #Survive {
+	margin: 180px auto;
+}
+#main #Survive h1, h3{
+	color: white;
+	font-family: "Bebas Neue";
+	text-align: center;
+}
+#main #Survive h1 {
+	font-size: 80px;
+	font-weight: 500;
+}
+#main #Survive h3 {
+	font-size: 24px;
+	font-weight: 500;
+}
+#main #Survive a {
+	margin: 30px auto;
+	display: flex;
+	color: black;
+	width: 260px;
+	height: 50px;
+	background-color: orange;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 14px;
+	font-size: 16px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+}
+#main #Survive #End-surv {
+	width: 100px;
+	margin: 400px auto 0 auto;
+	color: white;
+	font-size: 12px;
+}
+#main #Survive #End-surv img {
+	padding-left: 28px;
+	padding-top: 10px;
+}
+#main #Survive hr {
+	position: relative;
+	bottom: 9px;
+	height: 20px;
+	font-weight: 400;
+}
+/* Стили анимации */
+@keyframes change-color {
+	from {
+		color: black;
+		background-color: orange;
+	}
+	to {
+		color: orange;
+		background-color: black;
+	}
+}
+#main #Survive a:hover {
+	animation-name: change-color;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+/* Следующий блок стилей */
+#Social-B-R-G {
+	margin-top: -94px;
+	/* background-color: black; */
+	color: white;
+	height: 1052px;
+	width: 100%;
+}
+#Social-B-R-G img {
+	width: 100%;
+	height: 1052px;
+
+}
+#Social-B-R-G h6 {
+	position: relative;
+	bottom: 800px;
+	left: 100px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Bebas Neue";
+	font-weight: 500;
+}
+#Social-B-R-G h1 {
+	position: relative;
+	bottom: 780px;
+	left: 100px;
+	font-size: 80px;
+	text-transform: uppercase;
+	font-family: "Bebas Neue";
+	width: 410px;
+	height: 153px;
+	font-weight: 500;
+}
+#Social-B-R-G hr {
+	border: 2px solid white;
+	position: relative;
+	bottom: 760px;
+	right: 300px;
+	width: 711px;
+	z-index: 10;
+}
+#Social-B-R-G p {
+	position: relative;
+	bottom: 690px;
+	left: 260px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	width: 399px;
+	height: 173px;
+	font-family: "Open Sans";
+	font-size: 18px;
+	text-align: justify;
+	font-weight: 400;
+}
+#Social-B-R-G span {
+	font-weight: 700;
+}
+#Social-B-R-G #under {
+	text-decoration: underline orange 5px;
+	font-weight: 400;
+}
+#Social-B-R-G #screenshot {
+	position: relative;
+	bottom: 1200px;
+	display: flex;
+}
+#Social-B-R-G img[src$="screenshot 1.png"] {
+	position: relative;
+	left: 700px;
+	width: 502px;
+	height: 610px;
+	z-index: 3;
+}
+#Social-B-R-G img[src$="screenshot 2.png"] {
+	position: relative;
+	left: 290px;
+	top: 25px;
+	width: 438px;
+	height: 563px;
+	z-index: 2;
+}
+#Social-B-R-G img[src$="screenshot 3.png"] {
+	position: relative;
+	right: 120px;
+	top: 50px;
+	width: 438px;
+	height: 511px;
+	z-index: 1;
+}
+
+#Features {
+	width: 100%;
+	height: 960px;
+	margin-top: -1px;
+	color: white;
+	letter-spacing: 1px;
+}
+#Features img[src="images/Group.png"] {
+	position: absolute;
+	width: 100%;
+	height: 960px;
+	z-index: -4;
+}
+#Features #Features-text {
+	padding-top: 300px;
+	padding-left: 850px;
+}
+#Features #Features-text p[id="title"] {
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: "bebas neue";
+}
+#Features #Features-text p[id="title2"] {
+	font-size: 80px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: "Bebas Neue";
+}
+#Features #Features-text .or {
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: "Bebas Neue";
+	text-transform: uppercase;
+	color: #FFB548;
+}
+#Features #Features-text #small {
+	font-size: 18px;
+	width: 400px;
+	font-family: "Open Sans";
+	font-weight: 400;
+	margin-top: 20px;
+	line-height: 22px;
+}
+#Features #Features-text #step {
+	padding-left: 50px;
+}
+#Features #Features-text .round {
+	position: absolute;
+	top: 2460px;
+	left: 851px;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #fff;
+}
+#Features #Features-text #bl {
+	position: absolute;
+	top: 2625px;
+	left: 851px;
+	border: 1px solid white;
+	background-color: #000;
+}
+#Features #Features-text #bl2 {
+	position: absolute;
+	top: 2700px;
+	left: 851px;
+	border: 1px solid white;
+	background-color: #000;
+}
+#Features #Features-text #hr {
+	position: absolute;
+	left: 860px;
+	top: 2480px;
+
+	right: 30px;
+	height: 145px;
+	width: 2px;
+	background-color: #fff;
+}
+
+#System {
+	margin-top: -2px;
+	width: 100%;
+	color: #fff;
+}
+#System img {
+	position: absolute;
+	width: 100%;
+	height: 960px;
+	z-index: -4;
+}
+#System #h5 {
+	text-transform: uppercase;
+	font-family: "bebas neue";
+	font-size: 24px;
+	padding-top: 145px;
+	padding-left: 556px;
+}
+#System #h1 {
+	text-transform: uppercase;
+	font-family: "bebas neue";
+	font-size: 80px;
+	padding-left: 418px;
+	padding-top: 10px;
+}
+#System #table {
+	display: grid;
+	grid-template: repeat(3, 133px) / repeat(2, 286px);
+	margin-left: 120px;
+	margin-top: 100px;
+}
+#System #table #gpu {
+	grid-row: 3 / 4;
+	grid-column: 1 / 3;
+}
+#System #table #gpu .text {
+	width: 514px;
+	height: 53px;
+}
+#System #table div {
+	border: 1px solid rgba(128, 128, 128, 0.3);
+	padding: 20px;
+}
+#System #table .title {
+	font-size: 24px;
+	color: #FFB548;
+	text-transform: uppercase;
+	font-family: "bebas neue";
+}
+#System #table .text {
+	font-size: 16px;
+	font-family: "Open Sans";
+	margin-top: 15px;
+	width: 258px;
+	height: 45px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 22px;
+}
+
+#Press-Q {
+	margin-top: 200px;
+	width: 100%;
+	height: 960px;
+	background-color: #000;
+	color: white;
+}
+#Press-Q #first {
+	width: 437px;
+	height: 386px;
+	padding-top: 303px;
+	margin-left: 117px;
+}
+#Press-Q #first #f-title {
+	font-size: 24px;
+	font-family: "Bebas Neue";
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+#Press-Q #first #t-title {
+	font-size: 80px;
+	font-weight: 700;
+	font-family: "Bebas Neue";
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+#Press-Q #first p:last-of-type {
+	line-height: 22px;
+}
+#Press-Q #first a {
+	display: block;
+	color: black;
+	width: 260px;
+	height: 60px;
+	background-color: #FFB548;
+	text-decoration: none;
+	font-weight: 700;
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+}
+/* Опять анимация */
+#Press-Q #first a:hover {
+	animation-name: change-color;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+#Press-Q #ev-la {
+	position: relative;
+	bottom: 200px;
+	padding-left: 1050px;
+
+}
+#Press-Q #ev-la img[src$="8.jpg"] {
+	width: 62px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 0px #FFB548;
+}
+
